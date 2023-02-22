@@ -52,6 +52,22 @@ p {
 }
 
 .form-section {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   width: 60%;
+}
+
+.description {
+  /* height: 20%; */
+  background-color: blueviolet;
+}
+
+.form {
+  background-color: aqua;
+}
+
+.create-acc {
   background-color: aquamarine;
 }
