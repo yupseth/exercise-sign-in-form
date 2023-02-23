@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -28,18 +36,97 @@
       <div class="form-section">
         <section class="description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
-            facilisi morbi tempus iaculis urna. Ac tortor vitae purus faucibus
-            ornare.
+            Experience the ultimate artistic journey.<br /><em>Join us.</em>
           </p>
         </section>
 
         <section class="form">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <form id="my-form">
+            <div class="form-column-left">
+              <label for="firstname"
+                >First name
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  maxlength="140"
+                  placeholder="Enter your first name"
+                  required
+                />
+              </label>
+
+              <label for="phonenumber"
+                >Phone Number
+                <input
+                  type="tel"
+                  id="phonenumber"
+                  name="phonenumber"
+                  placeholder="Enter your phone number"
+                  required
+                  pattern="[0-9]{10}"
+                />
+              </label>
+
+              <label for="password"
+                >Password
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  maxlength="140"
+                  placeholder="Set a strong password"
+                  required
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              /></label>
+            </div>
+
+            <div class="form-column-right">
+              <label for="lastname"
+                >Last name
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  maxlength="140"
+                  placeholder="Enter your last name"
+                  required
+                />
+              </label>
+
+              <label for="email"
+                >Email
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  maxlength="140"
+                  placeholder="Enter your email"
+                  required
+                  autocomplete="off"
+                />
+              </label>
+
+              <label for="password-confirm"
+                >Confirm password
+                <input
+                  type="password"
+                  id="password-confirm"
+                  name="password-confirm"
+                  required
+                  maxlength="140"
+                  placeholder="Confirm your password"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              /></label>
+            </div>
+          </form>
         </section>
-        <section class="create-acc">Lorem ipsum dolor sit amet</section>
+        <section class="submit-section">
+          <div>
+            <button type="submit" form="my-form">Create Account</button>
+
+            <p>Already have an account? <a href="">Log in</a></p>
+          </div>
+        </section>
       </div>
     </div>
   </body>
