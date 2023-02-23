@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -14,7 +22,6 @@
           class="image"
           src="https://images.unsplash.com/photo-1634322487121-ba84c23cbc78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2100&q=80"
         />
-
         <div class="image-credit">
           <p>
             Photo by
@@ -26,7 +33,100 @@
           </p>
         </div>
       </div>
-      <div class="form-section"></div>
+      <div class="form-section">
+        <section class="description">
+          <div class="desc-wrapper">
+            <p>Experience the ultimate artistic journey.</p>
+            <p class="fancy"><em>Join us.</em></p>
+          </div>
+        </section>
+
+        <section class="form">
+          <form id="my-form">
+            <div class="form-column-left">
+              <label for="firstname"
+                >First name
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  maxlength="140"
+                  placeholder="Enter your first name"
+                  required
+                />
+              </label>
+
+              <label for="phonenumber"
+                >Phone Number
+                <input
+                  type="tel"
+                  id="phonenumber"
+                  name="phonenumber"
+                  placeholder="Enter your phone number"
+                  required
+                  pattern="[0-9]{10}"
+                />
+              </label>
+
+              <label for="password"
+                >Password
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  maxlength="140"
+                  placeholder="Set a strong password"
+                  required
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              /></label>
+            </div>
+
+            <div class="form-column-right">
+              <label for="lastname"
+                >Last name
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  maxlength="140"
+                  placeholder="Enter your last name"
+                  required
+                />
+              </label>
+
+              <label for="email"
+                >Email
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  maxlength="140"
+                  placeholder="Enter your email"
+                  required
+                  autocomplete="off"
+                />
+              </label>
+
+              <label for="password-confirm"
+                >Confirm password
+                <input
+                  type="password"
+                  id="password-confirm"
+                  name="password-confirm"
+                  required
+                  maxlength="140"
+                  placeholder="Confirm your password"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              /></label>
+            </div>
+          </form>
+        </section>
+        <section class="submit-section">
+          <button type="submit" form="my-form">Create Account</button>
+
+          <p>Already have an account? <a href="">Log in</a></p>
+        </section>
+      </div>
     </div>
   </body>
 </html>

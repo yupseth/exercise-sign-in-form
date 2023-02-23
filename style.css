@@ -1,13 +1,25 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: rgb(14 15 20);
+
+  background: linear-gradient(
+    90deg,
+    rgb(14 15 20),
+    rgb(41 45 63) 57%,
+    rgb(14 15 20) 100%
+  );
+
   margin: 0rem;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  opacity: 85%;
 }
 
 a {
@@ -24,7 +36,8 @@ a:hover {
   display: flex;
   height: 80vh;
   width: 80vw;
-  border-radius: 10px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 20px rgb(27 29 40);
 }
 
 .hero-section {
@@ -37,21 +50,125 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+img {
+  filter: drop-shadow(3px 0px 10px rgb(37 39 56));
 }
 
 .image-credit {
   position: absolute;
   width: 100%;
-  bottom: 20px;
+  bottom: 15px;
 }
 
-p {
-  color: white;
+.image-credit > p {
   font-size: 0.7rem;
   text-align: center;
 }
 
+p {
+  color: white;
+}
+
 .form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 60%;
-  background-color: aquamarine;
+  padding: 50px 60px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background: linear-gradient(
+    90deg,
+    rgb(31 41 54) 0%,
+    rgb(40 54 73) 50%,
+    rgb(38, 50, 64) 100%
+  );
+}
+.fancy {
+  color: rgb(129 143 171);
+}
+.form-section > section {
+  overflow: auto;
+}
+
+.description {
+  position: relative;
+  border-top-right-radius: 7px;
+}
+
+.desc-wrapper > p {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+#my-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.form-column-left,
+.form-column-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 20px;
+}
+
+input {
+  border: none;
+  margin-top: 7px;
+  min-width: 100%;
+  background: transparent;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+.submit-section {
+  border-bottom-right-radius: 7px;
+}
+
+.submit-section a {
+  color: rgb(129 143 171);
+}
+
+.submit-section p {
+  font-size: small;
+  color: rgb(185, 191, 204);
+}
+
+button {
+  border-radius: 7px;
+  padding: 10px 12px;
+
+  font-size: 1.1em;
+  font-weight: 600;
+  border: 0;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #fff;
+  background-color: rgb(129 143 171);
+}
+
+button:hover {
+  color: #2f97d3;
+  background: #fff;
 }
