@@ -37,7 +37,7 @@ a:hover {
   height: 80vh;
   width: 80vw;
   border-radius: 7px;
-  /* box-shadow: 0px 5px 5px rgb(59 78 113); */
+  box-shadow: 0px 0px 20px rgb(27 29 40);
 }
 
 .hero-section {
@@ -81,13 +81,11 @@ p {
   padding: 50px 60px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
-  /* background: rgb(38, 50, 56); */
-  /* background:; */
   background: linear-gradient(
     90deg,
     rgb(31 41 54) 0%,
-    rgb(46 60 80) 50%,
-    rgba(38, 50, 64, 1) 100%
+    rgb(40 54 73) 50%,
+    rgb(38, 50, 64) 100%
   );
 }
 .fancy {
@@ -131,12 +129,15 @@ label {
 
 input {
   border: none;
-  /* margin: auto auto 24px auto; */
   margin-top: 7px;
   min-width: 100%;
   background: transparent;
   color: #fff;
   border-bottom: 2px solid #fff;
+}
+
+input:focus {
+  outline: none;
 }
 
 .submit-section {
@@ -145,4 +146,29 @@ input {
 
 .submit-section a {
   color: rgb(129 143 171);
+}
+
+.submit-section p {
+  font-size: small;
+  color: rgb(185, 191, 204);
+}
+
+button {
+  border-radius: 7px;
+  padding: 10px 12px;
+
+  font-size: 1.1em;
+  font-weight: 600;
+  border: 0;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #fff;
+  background-color: rgb(129 143 171);
+}
+
+button:hover {
+  color: #2f97d3;
+  background: #fff;
 }
