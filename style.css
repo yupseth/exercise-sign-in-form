@@ -78,7 +78,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
-  padding: 20px 50px;
+  padding: 50px 60px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
   /* background: rgb(38, 50, 56); */
@@ -90,7 +90,9 @@ p {
     rgba(38, 50, 64, 1) 100%
   );
 }
-
+.fancy {
+  color: rgb(129 143 171);
+}
 .form-section > section {
   overflow: auto;
 }
@@ -100,8 +102,9 @@ p {
   border-top-right-radius: 7px;
 }
 
-.description > p {
+.desc-wrapper > p {
   font-size: 1.8rem;
+  margin: 0;
 }
 
 #my-form {
@@ -128,7 +131,8 @@ label {
 
 input {
   border: none;
-  margin: auto auto 24px auto;
+  /* margin: auto auto 24px auto; */
+  margin-top: 7px;
   min-width: 100%;
   background: transparent;
   color: #fff;
@@ -137,4 +141,8 @@ input {
 
 .submit-section {
   border-bottom-right-radius: 7px;
+}
+
+.submit-section a {
+  color: rgb(129 143 171);
 }
