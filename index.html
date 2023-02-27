@@ -74,11 +74,13 @@
                   type="password"
                   id="password"
                   name="password"
+                  minlength="6"
                   maxlength="140"
                   placeholder="Set a strong password"
                   required
                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              /></label>
+                />
+              </label>
             </div>
 
             <div class="form-column-right">
@@ -114,10 +116,12 @@
                   id="password-confirm"
                   name="password-confirm"
                   required
+                  minlength="6"
                   maxlength="140"
                   placeholder="Confirm your password"
                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              /></label>
+                />
+              </label>
             </div>
           </form>
         </section>
