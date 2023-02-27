@@ -38,7 +38,6 @@ a:hover {
   width: 60vw;
   border-radius: 7px;
   box-shadow: 0px 0px 20px rgb(27 29 40);
-  transition: width 600ms ease;
 }
 
 .hero-section {
@@ -78,7 +77,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 60%;
+  width: 50%;
   padding: 50px 60px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -171,7 +170,7 @@ button:hover {
   background: #fff;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
   .content {
     width: 85%;
   }
