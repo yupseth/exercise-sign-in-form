@@ -35,14 +35,14 @@ a:hover {
 .content {
   display: flex;
   height: 80vh;
-  width: 80vw;
+  width: 60vw;
   border-radius: 7px;
   box-shadow: 0px 0px 20px rgb(27 29 40);
 }
 
 .hero-section {
   position: relative;
-  width: 40%;
+  width: 50%;
   background-size: 100% 100%;
 }
 
@@ -90,9 +90,6 @@ p {
 }
 .fancy {
   color: rgb(129 143 171);
-}
-.form-section > section {
-  overflow: auto;
 }
 
 .description {
