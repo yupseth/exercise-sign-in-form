@@ -54,6 +54,7 @@
                   placeholder="Enter your first name"
                   required
                 />
+                <div class="firstname-error"></div>
               </label>
 
               <label for="phonenumber"
@@ -66,6 +67,7 @@
                   required
                   pattern="[0-9]{10}"
                 />
+                <div class="phone-error"></div>
               </label>
 
               <label for="password"
@@ -78,7 +80,9 @@
                   placeholder="Set a strong password"
                   required
                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              /></label>
+                />
+                <div class="password-error"></div>
+              </label>
             </div>
 
             <div class="form-column-right">
@@ -92,6 +96,7 @@
                   placeholder="Enter your last name"
                   required
                 />
+                <div class="lastname-error"></div>
               </label>
 
               <label for="email"
@@ -105,6 +110,7 @@
                   required
                   autocomplete="off"
                 />
+                <div class="email-error"></div>
               </label>
 
               <label for="password-confirm"
@@ -117,7 +123,9 @@
                   maxlength="140"
                   placeholder="Confirm your password"
                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              /></label>
+                />
+                <div class="password-confirm-error"></div>
+              </label>
             </div>
           </form>
         </section>
